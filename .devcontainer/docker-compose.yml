@@ -8,7 +8,7 @@ services:
     volumes:
       - ../..:/workspaces:cached
 
-    # network_mode: services_default
+    network_mode: services_default
 
     # keep the container alive
     command: sleep infinity

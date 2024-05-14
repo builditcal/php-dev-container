@@ -1,33 +1,42 @@
 {
-    "[blade]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+  "[blade]": {
     "editor.formatOnSave": true,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "GitHub Dark Default",
-    "cSpell.words": [
-        "azuretools",
-        "bmewburn",
-        "esbenp",
-        "formulahendry",
-        "hakcorp",
-        "intelephense",
-        "Jetbrains",
-        "jetbrainsmono",
-        "Laravel",
-        "Mehedi",
-        "myaaghubi",
-        "NarasimaPandiyan",
-        "onecentlin",
-        "rapidapi",
-        "xdebug"
-    ],
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.wordWrap": "on",
+  "cSpell.words": [
+    "azuretools",
+    "bmewburn",
+    "esbenp",
+    "formulahendry",
+    "hakcorp",
+    "intelephense",
+    "Jetbrains",
+    "jetbrainsmono",
+    "kokororin",
+    "Laravel",
+    "Mehedi",
+    "mikestead",
+    "myaaghubi",
+    "NarasimaPandiyan",
+    "onecentlin",
+    "phpfmt",
+    "rapidapi",
+    "xdebug"
+  ]
 }

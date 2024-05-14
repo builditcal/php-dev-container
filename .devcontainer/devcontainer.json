@@ -1,32 +1,30 @@
 {
-    "name": "Laravel 11 Test",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "app",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-    "forwardPorts": [
-        8000
-    ],
-    "remoteUser": "vscode",
-    "customizations": {
-        "vscode": {
-            "settings": {},
-            "extensions": [
-                "bmewburn.vscode-intelephense-client",
-                "xdebug.php-pack",
-                "streetsidesoftware.code-spell-checker",
-                "RapidAPI.vscode-rapidapi-client",
-                "formulahendry.code-runner",
-                "myaaghubi.auto-semicolon-vscode",
-                "hakcorp.php-awesome-snippets",
-                "onecentlin.laravel5-snippets",
-                "onecentlin.laravel-blade",
-                "vscode-icons-team.vscode-icons",
-                "GitHub.github-vscode-theme",
-                "EditorConfig.EditorConfig",
-                "MehediDracula.php-namespace-resolver",
-                "esbenp.prettier-vscode",
-                "ms-azuretools.vscode-docker"
-            ]
-        }
+  "name": "Laravel 11 Test",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [8000],
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "RapidAPI.vscode-rapidapi-client",
+        "formulahendry.code-runner",
+        "vscode-icons-team.vscode-icons",
+        "GitHub.github-vscode-theme",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "onecentlin.laravel-extension-pack",
+        "kokororin.vscode-phpfmt",
+        "bmewburn.vscode-intelephense-client",
+        "mikestead.dotenv"
+      ]
     }
+  },
+  "postCreateCommand": "composer global require 'laravel/installer'",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.config/composer/vendor/bin"
+  }
 }
